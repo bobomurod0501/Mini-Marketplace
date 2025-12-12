@@ -20,8 +20,8 @@ function renderProducts(products){
       card.classList = "product-card"
       card.innerHTML = `
          <img src="${item.image}"/>
-         <div class="product-title">${item.title}</div>
-         <div class="product-price">${item.price.toFixed(2)}</div>
+         <div class="product-title">${escapeHtml(item.title)}</div>
+         <div class="product-price">$${escapeHtml(item.price.toFixed(2))}</div>
          <button class="btn add-btn"> Add to cart</button>
 
       `;

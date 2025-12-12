@@ -9,7 +9,7 @@ export const CartItem = ({item, onRemove, onUpdate}) => {
             {item.title}
          </div>
          <div className='small'>
-            {item.price.toFixed(2)} each
+            ${item.price.toFixed(2)} each
          </div>
       </div>
       <div
